@@ -64,7 +64,7 @@ const HomePage: React.FC = () => {
 
                 <div className="mt-4">
                     {
-                        shortURLs.length > 0 ? <ShortURLList shortURLs={shortURLs} setShortURLs={setShortURLs} limit={3} buttonLink={"/list"}/>
+                        shortURLs.length > 0 ? <ShortURLList shortURLs={shortURLs} setShortURLs={setShortURLs} limit={3} buttonLink={"list"}/>
                             :
                             <div className="text-center mt-8">
                                 <p>No URLs generated yet</p>

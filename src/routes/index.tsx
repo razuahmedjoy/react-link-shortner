@@ -6,19 +6,19 @@ import ListPage from "../pages/ListPage";
 
 export const router = createBrowserRouter([
     {
-        path: "/",
+        path: "/react-link-shortner",
         element: <Layout />,
         children: [
             {
-                path: "/",
+                path: "",
                 element: <HomePage />,
             },
             {
-                path: "/list",
+                path: "list",
                 element: <ListPage />,
             },
             {
-                path: "/edit/:id",
+                path: "edit/:id",
                 element: <EditPage />,
             },
         ]

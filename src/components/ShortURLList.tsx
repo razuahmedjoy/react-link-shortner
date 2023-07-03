@@ -62,7 +62,7 @@ const ShortURLList = ({ shortURLs, setShortURLs, limit, buttonLink }: IShortURLL
 
                         <span className="cursor-pointer" onClick={() => openLongUrl(shortUrl.longURL)}>   http://localhost:5173/{shortUrl.id}</span>
                         <div className="flex text-lg gap-3">
-                            <Link to={`/edit/${shortUrl.id}`}>
+                            <Link to={`edit/${shortUrl.id}`}>
                                 <AiOutlineEdit className="cursor-pointer" />
                             </Link>
                             <AiOutlineDelete className="cursor-pointer" onClick={() => deleteUrl(shortUrl.id)} />
