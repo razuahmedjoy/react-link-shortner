@@ -1,5 +1,6 @@
 {
   "name": "url-shortner",
+  "homepage": "/react-link-shortner",
   "private": true,
   "version": "0.0.0",
   "type": "module",
