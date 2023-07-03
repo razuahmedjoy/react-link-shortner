@@ -15,7 +15,7 @@ type IShortURLListProps = {
 const ShortURLList = ({ shortURLs, setShortURLs, limit, buttonLink }: IShortURLListProps) => {
 
 
-    const link = buttonLink ? buttonLink : "/";
+    const link = buttonLink ? buttonLink : "/react-link-shortner";
     const data = limit ? shortURLs.slice(0, limit) : shortURLs;
 
     const navigate = useNavigate();
@@ -62,7 +62,7 @@ const ShortURLList = ({ shortURLs, setShortURLs, limit, buttonLink }: IShortURLL
 
                         <span className="cursor-pointer" onClick={() => openLongUrl(shortUrl.longURL)}>   http://localhost:5173/{shortUrl.id}</span>
                         <div className="flex text-lg gap-3">
-                            <Link to={`edit/${shortUrl.id}`}>
+                            <Link to={`/react-link-shortner/edit/${shortUrl.id}`}>
                                 <AiOutlineEdit className="cursor-pointer" />
                             </Link>
                             <AiOutlineDelete className="cursor-pointer" onClick={() => deleteUrl(shortUrl.id)} />
